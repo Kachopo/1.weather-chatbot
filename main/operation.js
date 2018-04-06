@@ -10,7 +10,7 @@ function getWeather(req, res){
 	var message =  data.message; // Object that contain wizyRoom message details (id, body, owner_id, owner_name, owner_mention_name, domain_id, workroom_id, workroom_name, created, is_reply)
 	var bot =      data.bot;     // Chatbot properties (id, mention_text)
 	var token =    data.token;   // Chatbot_server.token, used for authorization on Chatbot server
-	var apiKey =   'cacdf29dc2be47d484a105606152306'; //Weather API key change it with yours
+	var apiKey =   '622b58af9a684989a74114523180604'; //Weather API key change it with yours
 	var is_reply = true; //if true the message sent by the bot will be a reply to the message recieved
 
 	var country = message.body.replace(bot.mention_text , ""); //Get the country name from message recieved
